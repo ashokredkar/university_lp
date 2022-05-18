@@ -1,0 +1,11 @@
+.home{
+    position: relative;
+    /* overflow: hidden; */
+}
+.pbg1{
+    width: 80%;
+    position: absolute;
+    left: -40%;
+    top: 35%;
+    z-index: -1;
+}

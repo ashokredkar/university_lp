@@ -1,0 +1,39 @@
+.depart{
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.depart .departInfo{
+    width: 50%;
+    text-align: center;
+    margin: 3rem 0;
+}
+.depart .departInfo h1{
+    margin-bottom: 1rem;
+}
+.depart .departInfo p{
+    font-weight: 400;
+    color: gray;
+}
+.depart .departCards{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+.depart .departCards .dCard{
+    margin: 0.5rem;
+}
+
+@media screen and (max-width: 950px) {
+    .depart .departInfo{
+        width: 90%;
+    }
+    .depart .departCards{
+        flex-direction: column;
+    }
+
+}

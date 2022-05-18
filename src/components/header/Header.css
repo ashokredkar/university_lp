@@ -1,0 +1,121 @@
+.header{
+    height: calc(100vh - 5rem);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow: hidden;
+    background: var(--color-secondary);
+}
+.header .headerbg1{
+    width: 80%;
+    position: absolute;
+    right: 5%;
+}
+.header .headerbg2{
+    display: block;
+    width: 250px;
+    position: absolute;
+    left: 5rem;
+    bottom: 0rem;
+}
+.header .headerbg3{
+    display: block;
+    width: 150px;
+    position: absolute;
+    right: 11rem;
+    bottom: 1rem;
+}
+.header .headerInfo{
+    width: 30%;
+    position: absolute;
+    left: 16rem;
+    top: 22%;
+}
+.header .headerInfo h1{
+    color: var(--color-primary);
+    margin-bottom: 1rem;
+}
+.header .headerInfo p{
+    color: gray;
+    margin-bottom: 1.5rem;
+}
+
+
+@media screen and (max-width: 1050px) {
+    .header .headerInfo{
+        width: 30%;
+        position: absolute;
+        left: 10rem;
+        top: 10%;
+    }
+    .header .headerbg2{
+        width: 200px;
+        left: 4rem;
+        bottom: 4rem;
+    }
+    .header .headerbg3{
+        width: 120px;
+        right: 5rem;
+        bottom: 5rem;
+    }
+}
+@media screen and (max-width: 890px) {
+    .header .headerInfo{
+        width: 40%;
+        position: absolute;
+        left: 5rem;
+        top: 15%;
+    }
+    .header .headerInfo p{
+        color: rgb(21, 20, 20);
+    }
+    .header .headerbg2{
+        width: 150px;
+    }
+    .header .headerbg3{
+        width: 100px;
+    }
+}
+@media screen and (max-width: 700px) {
+    .header .headerbg1{
+        bottom: 20%;
+        left: 2rem;
+    }
+    .header .headerInfo{
+        width: 70%;
+        top: 10%;
+        left: 2rem;
+    }
+    .header{
+        align-items: flex-start;
+    }
+    .header .headerbg2{
+        width: 100px;
+        bottom: 6rem;
+    }
+    .header .headerbg3{
+        width: 80px;
+        bottom: 6rem;
+    }
+}
+@media screen and (max-width: 500px) {
+    .header .headerbg2{
+        width: 70px;
+        bottom: 6rem;
+    }
+    .header .headerbg3{
+        width: 50px;
+        bottom: 6rem;
+    }
+}
+@media screen and (max-width: 400px) {
+    .header .headerbg2,
+    .header .headerbg3{
+        display: none;
+    }
+    .header .headerbg1{
+        width: 400px;
+        left: -10%;
+    }
+}

@@ -1,0 +1,121 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: var(--color-secondary);
+    padding: 1rem 10rem;
+    position: sticky;
+    top: 0%;
+    left: 0%;
+    height: 5rem;
+    z-index: 10;
+}
+
+.navbar .logo {
+    flex: 1;
+}
+.navbar .logo img {
+    width: 60px;
+    border-radius: 50%;
+}
+
+.navbar .navList {
+    flex: 5;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-right: 2rem;
+}
+
+.navbar .navList .navItem {
+    margin: 0 1rem;
+    font-size: 16px;
+    font-weight: 500;
+    color: gray;
+    transition: 0.1s ease-out;
+    cursor: pointer;
+}
+.navbar .navList .navItem:hover {
+    color: var(--color-primary);
+}
+.navbar .navList .navItem.active {
+    color: var(--color-primary);
+    border-bottom: 3px solid var(--color-primary);
+}
+.navbar .navList .loginBtn {
+    display: none;
+}
+
+.navbar .loginBtn {
+    display: block;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 500;
+}
+.navbar .mobileNav {
+    display: none;
+    flex-direction: column;
+    color: white;
+}
+.navbar .mobileNav .toggleIcon {
+    margin-left: 1rem;
+}
+.navbar .mobileNav .mobileNavList {
+    position: absolute;
+    height: max-content;
+    width: 100vw;
+    z-index: 10;
+    background-color: var(--color-secondary);
+    left: 0%;
+    top: 5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    /* transition: 1s ease-in-out; */
+}
+.navbar .mobileNav .mobileNavList .navItem {
+    margin-bottom: 0.2rem;
+    padding: 1rem;
+    text-align: center;
+    color: gray;
+    font-weight: 500;
+}
+.navbar .mobileNav .mobileNavList .navItem.active {
+    color: var(--color-primary);
+    border-top: 2px solid var(--color-primary);
+}
+.navbar .mobileNav .mobileNavList .loginBtn {
+    display: none;
+    width: 150px;
+    margin-bottom: 1rem;
+}
+
+
+@media screen and (max-width: 1070px) {
+    .navbar {
+        padding: 1rem 4rem;
+    }
+}
+@media screen and (max-width: 850px) {
+    .navbar {
+        padding: 1rem 3rem;
+    }
+    .navbar .navList {
+        display: none;
+    }
+    .navbar .mobileNav {
+        display: block;
+    }
+}
+@media screen and (max-width: 500px) {
+    .navbar {
+        padding: 1rem;
+    }
+    .navbar .loginBtn {
+        display: none;
+    }
+    .navbar .mobileNav .mobileNavList .loginBtn {
+        display: block;
+    }
+}

@@ -1,0 +1,193 @@
+.footer{
+    background: rgb(35, 38, 45);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+.footerInfo{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.fiLeft{
+    flex: 3.5;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+}
+.fiRight{
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+}
+.fList{
+    flex: 1;
+    margin-right: 2rem;
+}
+.fList .fBrand{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    color: white;
+    margin-bottom: 1rem;
+}
+.fList .fBrand .fbranding{
+    margin-left: 0.5rem;
+}
+.fList .fBrand .fbranding h2{
+    font-weight: 700;
+}
+.fList .fBrand .fbranding span{
+    font-weight: 500;
+}
+.fList hr{
+    height: 1px;
+    width: 100%;
+    background: rgb(76, 76, 76);
+    margin-bottom: 1.5rem;
+}
+.fList p{
+    margin-bottom: 1rem;
+}
+.fList .fIcons{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.fList .footerIcon{
+    font-size: 24px;
+    margin-right: 0.6rem;
+    color: gray;
+    transition: 0.2s ease-out;
+    cursor: pointer;
+}
+.fList .footerIcon:hover{
+    color: var(--color-primary);
+    transform: scale(1.15);
+}
+
+
+.fList .listHead{
+    color: white;
+    font-weight: 500;
+    font-size: 14px;
+    margin-bottom: 3rem;
+}
+.fList p{
+    font-size: 13px;
+    font-weight: 300;
+    color: rgb(136, 136, 136);
+}
+.fList p span{
+    font-size: 10px;
+    font-weight: 300;
+}
+
+.fiRight{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    height: 100%;
+}
+.fiRight .listHead{
+    color: white;
+    font-weight: 500;
+    font-size: 14px;
+    margin-bottom: 3rem;
+}
+.fiRight .forumLabel{
+    font-size: 13px;
+    font-weight: 300;
+    color: rgb(136, 136, 136);
+    margin-bottom: 1rem;
+}
+.fiRight .inputBtn{
+    display: flex;
+    width: 100%;
+}
+.fiRight .inputBtn input{
+    padding: 0.8rem 1rem;
+    border-radius: 5px 0 0 5px;
+    width: 100%;
+}
+.fiRight .inputBtn button{
+    padding: 0.8rem 1rem;
+    border-radius: 0 5px 5px 0;
+    width: 50%;
+}
+
+.copyrights{
+    background: rgb(16, 17, 19);
+    padding: 2rem 10rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.copyrights span{
+    color: gray;
+    font-weight: 500;
+}
+.copyrights .footerMenus span{
+    font-weight: 300;
+    margin-left: 1rem;
+    cursor: pointer;
+}
+.copyrights .footerMenus span:hover{
+    color: rgb(202, 202, 202);
+}
+
+
+
+@media screen and (max-width: 1050px) {
+    .footerInfo{
+        flex-direction: column;
+    }
+    .fList{
+        margin-bottom: 2rem;
+    }
+    .copyrights{
+        padding: 2rem 6rem;
+    }
+}
+@media screen and (max-width: 900px) {
+    .copyrights{
+        padding: 2rem;
+    }
+}
+@media screen and (max-width: 680px) {
+    .fiLeft{
+        flex-direction: column;
+    }
+    .copyrights{
+        flex-direction: column;
+        justify-content: center;
+    }
+    .copyrights .footerMenus{
+        margin-top: 1rem;
+    }
+}
+@media screen and (max-width: 500px) {
+    .fiLeft{
+        margin-top: 2rem;
+    }
+    .fiRight{
+        margin-bottom: 2rem;
+    }
+}
+@media screen and (max-width: 480px) {
+    .copyrights span{
+        text-align: center;
+    }
+    .copyrights .footerMenus{
+        display: flex;
+        flex-direction: column;
+    }
+    .copyrights .footerMenus span{
+        margin-bottom: 0.5rem;
+        text-align: center;
+    }
+}

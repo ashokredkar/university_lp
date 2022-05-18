@@ -1,0 +1,148 @@
+.possibilities {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.possibilities img {
+    position: absolute;
+    left: 0rem;
+    top: 0rem;
+    z-index: -1;
+}
+.pLeft {
+    flex: 1;
+    padding-left: 2rem;
+    display: flex;
+    justify-content: center;
+}
+
+
+.pLeft video {
+    width: 100%;
+    border-radius: 30px;
+}
+.video-overlay {
+    position: absolute;
+    width: 100%;
+    border-radius: 30px;
+    inset: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.video-overlay_circle {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: var(--color-primary);
+    cursor: pointer;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.pRight {
+    flex: 1;
+    padding-left: 4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 2rem;
+    width: 100%;
+}
+
+.pRight h1 {
+    margin-bottom: 2rem;
+}
+
+.pRight .pNumbers {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin-top: 2rem;
+}
+
+.pRight .pNumbers>div {
+    flex: 1;
+    margin-right: 2rem;
+}
+
+.pRight .pNumbers .students span,
+.pRight .pNumbers .courses span,
+.pRight .pNumbers .hours span {
+    font-size: 35px;
+    font-weight: 700;
+}
+
+.pRight .pNumbers .students span,
+.pRight .pNumbers .students p {
+    color: var(--color-primary);
+}
+
+.pRight .pNumbers .courses span,
+.pRight .pNumbers .courses p {
+    color: rgb(255, 80, 49);
+}
+
+.pRight .pNumbers .hours span,
+.pRight .pNumbers .hours p {
+    color: rgb(30, 255, 0);
+}
+
+@media screen and (max-width: 1050px) {
+    .possibilities {
+        flex-direction: column;
+    }
+    .possibilities img {
+        display: none;
+    }
+    .pLeft video {
+        width: 80%;
+    }
+    .pRight, .pLeft {
+        padding-left: 0;
+        align-items: center;
+    }
+    .pRight .pNumbers{
+        justify-content: center;
+    }
+    .pRight .pNumbers > div{
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .possibilities {
+        margin-top: 3rem;
+    }
+    .pLeft video {
+        width: 100%;
+    }
+    .pRight .pNumbers .students span,
+    .pRight .pNumbers .courses span,
+    .pRight .pNumbers .hours span {
+        font-size: 28px;
+        font-weight: 700;
+    }
+    .pRight .pNumbers {
+        flex-direction: column;
+        width: 90%;
+        margin-left: 1rem;
+    }
+    .pRight .pNumbers .students {
+        width: 100%;
+        text-align: left;
+    }
+    .pRight .pNumbers .courses {
+        width: 100%;
+        text-align: center;
+    }
+    .pRight .pNumbers .hours {
+        width: 100%;
+        text-align: right;
+    }
+}

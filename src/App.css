@@ -1,0 +1,53 @@
+*{
+  font-family: 'Rubik', sans-serif;
+  font-weight: 300;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  border: none;
+  outline: none;
+  scroll-behavior: smooth;
+}
+
+.btn1{
+  padding: 0.8rem 1.5rem;
+  border-radius: 50px;
+  background: var(--color-primary);
+  color: white;
+  font-weight: 500;
+  cursor: pointer;
+}
+.btn2{
+  padding: 0.5rem 1rem;
+  border-radius: 50px;
+  background: white;
+  color: var(--color-primary);
+  border: 1px solid var(--color-primary);
+  transition: 0.2s ease-out;
+  cursor: pointer;
+}
+.btn2:hover{
+  background-color: var(--color-primary);
+  color: white;
+}
+
+.section-padding{
+  padding: 6rem 10rem;
+}
+
+
+@media screen and (max-width: 1050px) {
+  .section-padding{
+    padding: 2rem 6rem;
+  }
+}
+@media screen and (max-width: 900px) {
+  .section-padding{
+    padding: 4rem 2rem;
+  }
+}
+@media screen and (max-width: 500px) {
+  .section-padding{
+    padding: 1rem;
+  }
+}
